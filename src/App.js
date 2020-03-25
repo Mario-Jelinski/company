@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Home from './pages/home/Home';
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,9 +17,6 @@ function App() {
   //const bab = new Babylon();
   return (
     <Router>
-      <div className="App">
-        App2 
-      </div>
       <Switch>
         <Route path="/about">
           about
@@ -28,7 +25,7 @@ function App() {
           topics
         </Route>
         <Route path="/">
-          home
+          <Home />
         </Route>
       </Switch>
     </Router>

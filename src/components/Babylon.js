@@ -18,6 +18,8 @@ import {
     Mesh
 } from "@babylonjs/core/Meshes/mesh";
 
+import * as BABYLON from '@babylonjs/core/Legacy/legacy';
+
 import {
     GridMaterial
 } from "@babylonjs/materials/grid";
@@ -30,6 +32,7 @@ class Babylon {
 		const canvas = document.getElementById("renderCanvas");
 		const engine = new Engine(canvas);
 		var scene = new Scene(engine);
+		scene.clearColor = new BABYLON.Color4(0,0,0,0);
 		var camera = new FreeCamera("camera1", new Vector3(0, 5, -10), scene);
 		camera.setTarget(Vector3.Zero());
 		camera.attachControl(canvas, true);
