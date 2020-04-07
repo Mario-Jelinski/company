@@ -5,7 +5,7 @@ import Header from '../../components/header/Header';
 function Home() {
   //const bab = new Babylon();
   return (
-    <div>
+    <div className="container-fluid">
         <Header />
         Home page
     </div>
