@@ -7,7 +7,8 @@ header {
     #renderCanvas {
         width: 100%;
         height: 150px;
-        display: block;
+        //display: block;
+        display: none;
         font-size: 0;
         background: transparent;
     }
@@ -33,4 +34,30 @@ header {
     }
     .main-menu {        
     }
+
+    nav {
+        a { 
+            color: #fff !important;       
+            font-weight: bold;
+            font-size: 14px;       
+        }
+        .navbar {
+            padding: 0.3rem 1rem !important;        
+        }
+        .navbar-brand {
+            margin-left: 36px;
+            margin-right: 2rem;            
+        }
+        li {            
+            margin-right: 2rem;
+        }
+        span {
+            color: #fff;
+            margin-right: 3px;        
+            font-weight: bold;
+        }
+        .phone {
+            color: #03BFCB;            
+        }
+    }    
 }

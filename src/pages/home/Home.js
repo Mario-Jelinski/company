@@ -1,5 +1,8 @@
 import React from 'react';
 import Header from '../../components/header/Header';
+import TopBanner from '../../components/topBanner/TopBanner';
+import FancyBox from '../../components/fancyBox/FancyBox';
+import About from '../../components/about/About';
 //import './App.css';
 
 function Home() {
@@ -7,7 +10,9 @@ function Home() {
   return (
     <div className="container-fluid">
         <Header />
-        Home page
+        <TopBanner />
+        <FancyBox />  
+        <About />
     </div>
   );
 }

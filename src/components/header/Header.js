@@ -16,6 +16,8 @@ import {
   DropdownItem,
   NavbarText
 } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 function Header() {  
   const [isOpen, setIsOpen] = useState(false);
@@ -27,21 +29,21 @@ function Header() {
 
   return (
     <header>
+      <div className="container">
         <div className="row">
           <div className="col-sm-12 header-top">
             <div className="menu-brand">
               <a href="#">                  
                   Company
               </a>
-            </div>
-            <canvas id="renderCanvas" touch-action="none"></canvas>
+            </div>            
+            <canvas id="renderCanvas" touch-action="none"></canvas>            
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-12 main-menu">
-            
-            <Navbar color="light" light expand="md">
-              <NavbarBrand href="/">reactstrap</NavbarBrand>
+          <div className="col-sm-12 main-menu">            
+            <Navbar light expand="md">
+              <NavbarBrand href="/">HOME</NavbarBrand>
               <NavbarToggler onClick={toggle} />
               <Collapse isOpen={isOpen} navbar>
                 <Nav className="mr-auto" navbar>
@@ -69,13 +71,17 @@ function Header() {
                     </DropdownMenu>
                   </UncontrolledDropdown>
                 </Nav>
-                <NavbarText>Simple Text</NavbarText>
+                <NavbarText>
+                  <span>CALL ME:</span>
+                  <span className="phone">0176 xxx xxx xxx</span>
+                </NavbarText>
               </Collapse>
             </Navbar>
 
 
           </div>
         </div>
+      </div>
     </header>
   );
 }
