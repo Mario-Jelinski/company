@@ -1,6 +1,70 @@
 .core-box {
-    background-color: #FFF;
+    background-color: rgb(228, 237, 243);
     overflow: visible;    
+
+    .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+        h2 {
+            font-weight: 900;
+            color: rgb(0, 71, 103);
+        }
+        p {
+            color: #03BFCB;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin: -2px 0 2px 0;
+        }
+    }
+    
+    .align-right {
+        text-align: right;
+    }
+
+    .btn-text.active {
+        margin-right: 35px;
+    }
+    .btn-text {
+        font-weight: 600;
+        position: relative;
+        color: rgb(64, 77, 96);
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+        background: none;
+        border: none;
+        outline: none;
+        transition: all .5s;
+        
+        &:hover {
+            color: #03BFCB;
+            svg {
+                position: absolute;
+                font-size: 25px;
+                line-height: 30px;
+                width: 30px;
+                right: -45px;
+                top: 1px;
+                text-transform: none;
+                opacity: 0;
+                transition: all .5s;
+                animation: btn-text-anima 1s linear infinite;
+                color: #03BFCB;
+            }
+        }
+    }
+    hr.space-sm, .space{
+        height: 30px;
+        border: none;
+        clear: both;
+        margin: 0;
+    }
 
     .grid-list {        
         .grid-box {
@@ -12,7 +76,29 @@
             padding: 0;
             margin: 0;
             min-width: 0;
-            position: relative;            
+            position: relative; 
+            .cnt-box {  
+                .img-box {
+                    position: relative;
+                    overflow: hidden;
+                    display: block;
+                    border-radius: 3px;
+                    transition: all .5s;
+                    img {
+                        max-width: 100%;
+                        display: block;
+                        position: relative;
+                        border-radius: 3px;
+                        transition: all .5s;
+                        opacity: 0.8;
+                    }
+                }
+                &:hover {
+                    img {
+                        opacity: 1;
+                    }
+                }
+            }         
             .cnt-box.boxed:hover {
                 opacity: 1;
                 transform: translateY(-5px);
@@ -26,10 +112,62 @@
                     margin: 0;
                     padding: 30px 30px 0 30px;
                 }
+                
+                .extra-field {
+                    margin: 30px;
+                    position: absolute;
+                    z-index: 1;
+                    display: inline-block;
+                    width: auto;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    letter-spacing: .5px;
+                    font-size: 11px;
+                    line-height: 30px;
+                    border-radius: 3px;
+                    color: rgb(255, 255, 255);
+                    padding: 0 15px;
+                    background-color: #03BFCB;
+                }
+                
                 .caption {
                     padding: 30px;
                     h2 {
                         color: rgb(0, 71, 103);
+                    }
+                    p {
+                        margin-top: 15px;
+                        font-size: 14px;
+                        color: rgb(64, 77, 96);
+                    }
+                    .cnt-info {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-gap: 15px;
+                        padding: 15px 0;
+                        div {
+                            display: flex;
+                            flex-direction: column;
+                            border-right: 1px solid rgb(196, 201, 202);
+                            span {                                
+                                &:first-child {
+                                    text-transform: uppercase;
+                                    font-weight: 700;
+                                    font-size: 12px;
+                                    line-height: 14px;
+                                }
+                                &:last-child {
+                                    font-size: 13px;
+                                    font-weight: 600;
+                                    line-height: 13px;
+                                    margin-top: 7px;
+                                    color: #03BFCB;
+                                }
+                            }
+                            &:last-child {
+                                border: none;
+                            }
+                        }
                     }
                 }
             }

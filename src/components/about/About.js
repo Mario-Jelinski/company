@@ -2,30 +2,20 @@ import React, { useEffect, useState } from 'react';
 import './about.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import sign from './img/sign.png';
+import logo from './img/img1.jpg';
+
 function About() {  
 
     return (
         <section className="about">
             <div class="container">
                 <div class="row row-fit-lg fade-bottom" data-anima="" data-time="1000">
-                    <div class="col-lg-6">
-                        <div class="slider glide glide--ltr glide--slider glide--swipeable" data-options="arrows:true,nav:false"><div data-glide-el="track" class="glide__track">
-                            <ul class="glide__slides">
-                                <li class="glide__slide glide__slide--active">
-                                    <a class="img-box img-box-caption btn-video lightbox" href="https://www.youtube.com/watch?v=Lb4IcGF5iTQ" data-lightbox-anima="fade-top">
-                                        <img src="media/image-3.jpg" alt="" />
-                                        <span>Albert Patterson</span>
-                                    </a>
-                                </li>
-                                <li class="glide__slide">
-                                    <a class="img-box img-box-caption lightbox" href="media/image-16.jpg" data-lightbox-anima="fade-top">
-                                        <img src="media/image-16.jpg" alt="" />
-                                        <span>Security team</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="glide__arrows" data-glide-el="controls"><button class="glide__arrow glide__arrow--left" data-glide-dir="<"></button><button class="glide__arrow glide__arrow--right" data-glide-dir=">"></button></div></div>
+                    <div class="col-lg-6 overflow">                        
+                        <a class="img-box img-box-caption btn-video lightbox" href="https://www.youtube.com/watch?v=Lb4IcGF5iTQ" data-lightbox-anima="fade-top">
+                            <img src={logo} alt="" />
+                            <span>Albert Patterson</span>
+                        </a>
                     </div>
                     <div class="col-lg-6">
                         <div class="title">
@@ -37,7 +27,7 @@ function About() {
                             Utenim ad minim veniam quis nostrud exercitation ullamco laboris.
                         </p>
                         <div class="box-sign">
-                            <img alt="sign" src="media/sign-dark.png" />
+                            <img alt="sign" src={sign} />
                             <b>Albert Patterson</b>
                             <span>Founder &amp; CEO</span>
                         </div>

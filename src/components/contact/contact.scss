@@ -1,0 +1,80 @@
+.contact {
+    .fade-bottom {
+        animation: fadebottom .5s;
+    }
+    .title {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
+        position: relative;
+        h2 {
+            font-size: 28px;
+            line-height: 40px;
+            font-weight: 900;
+            color: rgb(0, 71, 103);
+        }
+        p {
+            text-transform: uppercase;
+            font-weight: 700;
+            margin: -2px 0 2px 0;
+            color: #03BFCB;
+        }
+    }
+    p {
+        margin: 0;
+        color: rgb(64, 77, 96);
+    }
+    form {
+        input {
+            margin: 0 0 20px 0;
+            transition: all .5s;
+            border-color: #03BFCB;
+        }
+        .input-text {
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-radius: 0;
+            padding: 15px 0;
+        }
+        textarea {
+            height: 100px;
+            margin: 0 0 20px 0;
+            transition: all .5s;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-radius: 0;
+            padding: 15px 0;
+        }
+        button.btn-xs, button.btn-sm {
+            line-height: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            background-color: #03BFCB;
+            border-color: #03BFCB;
+            padding: 7px 20px;
+        }
+
+        .btn {
+            color: #fff;
+            border-radius: 3px;
+            display: inline-block;
+            text-decoration: none;
+            border-style: solid;
+            border-width: 1px;
+            position: relative;
+            cursor: pointer;
+            outline: none;
+            text-align: center;
+            transition: all .5s;
+        }
+    }
+    hr.space-xs {
+        height: 15px;
+    }
+}

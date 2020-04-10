@@ -2,6 +2,16 @@ import React, { useEffect, useState } from 'react';
 import './coreBox.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import logo1 from './img/logo1.jpg';
+import logo2 from './img/logo2.jpg';
+import logo3 from './img/logo3.jpg';
+import logo4 from './img/logo4.jpg';
+import logo5 from './img/logo5.jpg';
+import logo6 from './img/logo6.jpg';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
+
 function CoreBox() {  
 
     return (
@@ -16,16 +26,19 @@ function CoreBox() {
                     </div>
                     <div class="col-lg-6 align-right align-left-md">
                         <hr class="space-sm hidden-md" />
-                        <a href="#" class="btn-text active">All services</a>
+                        <a href="#" class="btn-text active">
+                            All services 
+                            <FontAwesomeIcon icon={faAngleRight} />
+                        </a>
                     </div>
                 </div>
-
+                <hr class="space" />
 
                 <div class="grid-list fade-bottom" data-columns="3" data-columns-md="2" data-columns-sm="1" data-anima="" data-time="1000">
                     <div class="grid-box">
                         <div class="grid-item">
                             <div class="cnt-box cnt-box-info boxed" data-href="#">
-                                <a href="#" class="img-box"><img src="media/image-17.jpg" alt="" /></a>
+                                <a href="#" class="img-box"><img src={logo1} alt="" /></a>
                                 <div class="caption">
                                     <h2>Security audit</h2>
                                     <div class="cnt-info">
@@ -41,7 +54,7 @@ function CoreBox() {
                         </div>
                         <div class="grid-item">
                             <div class="cnt-box cnt-box-info boxed" data-href="#">
-                                <a href="#" class="img-box"><img src="media/image-16.jpg" alt="" /></a>
+                                <a href="#" class="img-box"><img src={logo2} alt="" /></a>
                                 <div class="caption">
                                     <h2>Performance checks</h2>
                                     <div class="cnt-info">
@@ -57,7 +70,7 @@ function CoreBox() {
                         </div>
                         <div class="grid-item">
                             <div class="cnt-box cnt-box-info boxed" data-href="#">
-                                <a href="#" class="img-box"><img src="media/image-9.jpg" alt="" /></a>
+                                <a href="#" class="img-box"><img src={logo3} alt="" /></a>
                                 <div class="caption">
                                     <h2>Vulnerability report</h2>
                                     <div class="cnt-info">
@@ -73,7 +86,7 @@ function CoreBox() {
                         </div>
                         <div class="grid-item">
                             <div class="cnt-box cnt-box-info boxed" data-href="#">
-                                <a href="#" class="img-box"><img src="media/image-5.jpg" alt="" /></a>
+                                <a href="#" class="img-box"><img src={logo4} alt="" /></a>
                                 <div class="caption">
                                     <h2>Web development</h2>
                                     <div class="cnt-info">
@@ -90,7 +103,7 @@ function CoreBox() {
                         <div class="grid-item">
                             <div class="cnt-box cnt-box-info boxed" data-href="#">
                                 <div class="extra-field">30% discount today</div>
-                                <a href="#" class="img-box"><img src="media/image-11.jpg" alt="" /></a>
+                                <a href="#" class="img-box"><img src={logo5} alt="" /></a>
                                 <div class="caption">
                                     <h2>Legal contracts</h2>
                                     <div class="cnt-info">
@@ -107,7 +120,7 @@ function CoreBox() {
                         <div class="grid-item">
                             <div class="cnt-box cnt-box-info boxed" data-href="#">
                                 <div class="extra-field">30% discount today</div>
-                                <a href="#" class="img-box"><img src="media/image-12.jpg" alt="" /></a>
+                                <a href="#" class="img-box"><img src={logo6} alt="" /></a>
                                 <div class="caption">
                                     <h2>Strategic planning</h2>
                                     <div class="cnt-info">
