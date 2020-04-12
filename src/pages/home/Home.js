@@ -5,6 +5,8 @@ import FancyBox from '../../components/fancyBox/FancyBox';
 import About from '../../components/about/About';
 import CoreBox from '../../components/core/CoreBox';
 import Contact from '../../components/contact/Contact';
+import Benefit from '../../components/benefit/Benefit';
+import Footer from '../../components/footer/Footer';
 //import './App.css';
 
 function Home() {
@@ -17,6 +19,8 @@ function Home() {
         <About />
         <CoreBox />
         <Contact />
+        <Benefit />
+        <Footer />
     </div>
   );
 }
