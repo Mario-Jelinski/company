@@ -2,6 +2,9 @@
     background-image: url(./img/background.jpg);
     .container {
         padding-top: 50px;
+    }    
+    .space-md {        
+        border: none;
     }
     .me {
         position: relative;
@@ -89,5 +92,21 @@
     }
     h3 {
         margin-top: 100px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .hidden-md {
+        display: none !important;
+    }
+    .space-md {
+        height: 100px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .full-width-sm {
+        width: 100% !important;
+        margin-bottom: 15px;
     }
 }

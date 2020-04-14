@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './footer.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMinus } from '@fortawesome/free-solid-svg-icons'
 
 function Footer() {  
 
@@ -22,10 +24,10 @@ function Footer() {
                     <div class="col-lg-4">
                         <h3>Resources</h3>
                         <ul class="icon-list icon-line">
-                            <li><a href="#">Partners and advertising</a></li>
-                            <li><a href="#">About us and the company</a></li>
-                            <li><a href="#">Services and projects</a></li>
-                            <li><a href="#">Contact us online</a></li>
+                            <li><FontAwesomeIcon icon={faMinus} /><a href="#">Partners and advertising</a></li>
+                            <li><FontAwesomeIcon icon={faMinus} /><a href="#">About us and the company</a></li>
+                            <li><FontAwesomeIcon icon={faMinus} /><a href="#">Services and projects</a></li>
+                            <li><FontAwesomeIcon icon={faMinus} /><a href="#">Contact us online</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-4">

@@ -12,9 +12,14 @@ header {
         font-size: 0;
         background: transparent;
     }
-    .header-top {
-        height: 100px;
+    .line {
+        width: 100%;
+        height: 1px;
         border-bottom: solid 1px #6fa6d7;
+        opacity: 0.5;
+    }
+    .header-top {
+        height: 100px;        
     }
     .menu-brand {
         position: absolute;
@@ -29,7 +34,21 @@ header {
             font-size: 36px;
             text-decoration: none;
             font-weight: bold;
-
+            font-family: "Segoe UI";
+            img {
+                height: 85px;          
+            }
+            .black {
+                position: absolute;
+                left: 88px;
+                top: 7px;
+                font-size: 13px;
+                color: #323232;
+            }
+            .dev {
+                position: relative;
+                margin-left: 5px
+            }
         }
     }
     .main-menu {        

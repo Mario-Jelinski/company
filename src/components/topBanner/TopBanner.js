@@ -45,10 +45,9 @@ function TopBanner() {
                         <hr className="space-sm" />
                         <a href="#" className="btn btn-sm width-190 full-width-sm">Request a quote</a>
                         <a href="#" className="btn btn-border btn-sm width-190 active full-width-sm">Free trial</a>
-                        <hr className="space-lg" />
-                        <hr className="space-lg" />
+                        <hr className="space-md" />
                     </div>  
-                    <div className="col-lg-5 me">
+                    <div className="col-lg-5 me hidden-md">
                         <img 
                             data-anima="" 
                             data-time="1000" 

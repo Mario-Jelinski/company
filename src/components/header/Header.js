@@ -19,6 +19,8 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
+import logo from './img/logo.png';
+
 function Header() {  
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
@@ -34,12 +36,17 @@ function Header() {
           <div className="col-sm-12 header-top">
             <div className="menu-brand">
               <a href="#">                  
-                  Company
-              </a>
+                <img src={logo} alt="" />
+                <span className="black">black</span>
+                <span className="dev">development</span>
+              </a>              
             </div>            
             <canvas id="renderCanvas" touch-action="none"></canvas>            
           </div>
         </div>
+      </div>
+      <div className="line"></div>
+      <div className="container">
         <div className="row">
           <div className="col-sm-12 main-menu">            
             <Navbar light expand="md">
