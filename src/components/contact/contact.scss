@@ -27,9 +27,22 @@
         color: rgb(64, 77, 96);
     }
     form {
-
+        .error-box, .success-box {
+            margin-top: 15px;
+        }
         .error {
             color: #d30000;
+            border-color: #d30000;
+            p {
+                color: #d30000;
+            }
+            .input-text {
+                border-color: #d30000;
+            }
+            
+        }
+        .terms-checked {
+            color: #00a300;
         }
         input {
             margin: 0 0 20px 0;

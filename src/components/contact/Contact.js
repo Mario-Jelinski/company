@@ -1,26 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import GoogleMapReact from 'google-map-react';
 import './contact.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Contact(props) {    
     const [success, setSuccess] = useState(false);
-    const [error, setError] = useState(false);
+    const [sendError, setsendError] = useState(false);
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [policy, setPolicy] = useState(false);
     const [policyErrorClass, setPolicyErrorClass] = useState("");
     const { detailed, showMap } = props;
-
-    const AnyReactComponent = ({ text }) => <div>{text}</div>;
-    const  defaultProps = {
-        center: {
-          lat: 59.95,
-          lng: 30.33
-        },
-        zoom: 11
-      };
+    const [errors, setErrors] = useState({name: '', email: '', message: ''});
 
     const renderMap = () => {
         return (
@@ -32,20 +23,53 @@ function Contact(props) {
 
     const send = (event) => {
         event.preventDefault();
-        console.log("SEND");
+        let errors = {name: '', email: '', message: ''};
+        let error = false;
+
+        if (name.length < 3) {
+            errors.name = 'error';
+            error = true;
+        }
+        if (email.length < 3) {
+            errors.email = 'error';
+            error = true;
+        }
+        if (message.length < 10) {
+            errors.message = 'error';
+            error = true;
+        }
+        setErrors(errors);
+        if (error) {
+            return;
+        }
+
         setPolicyErrorClass("");
         if (!policy) {
             setPolicyErrorClass("error");
             return;
-        }        
+        }       
+        setsendError(false); 
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ name: name, email: email, message: message })
-        };
+        };        
         fetch('/api/v1/message/', requestOptions)
-            .then(response => response.json())
-            .then(data => setSuccess(true));
+            .then(async response => {
+                const data = await response.json();    
+                if (!response.ok) {                    
+                    const error = (data && data.message) || response.status;
+                    return Promise.reject(error);
+                }    
+                setName('');
+                setEmail('');
+                setMessage('');
+                setPolicy(false);
+                setSuccess(true);
+            })
+            .catch(error => {
+                setsendError(true);                
+            });
     }
     
     const renderDetailed = () => {
@@ -59,7 +83,7 @@ function Contact(props) {
                         </div>
                         <form className="form-box form-ajax">
                             <div className="row">
-                                <div className="col-lg-6">
+                                <div className={errors.name.concat(" col-lg-6")}>
                                     <p>Name</p>
                                     <input id="name" name="name" placeholder="" type="text" className="input-text" required="" value={name} 
                                         onChange={ e=> {
@@ -67,7 +91,7 @@ function Contact(props) {
                                         }}
                                     />
                                 </div>
-                                <div className="col-lg-6">
+                                <div className={errors.email.concat(" col-lg-6")}>
                                     <p>Email</p>
                                     <input id="email" name="email" placeholder="" type="email" className="input-text" required="" value={email} 
                                         onChange={ e=> {
@@ -76,8 +100,8 @@ function Contact(props) {
                                     />
                                 </div>
                             </div>
-                            <p>Messagge</p>
-                            <textarea id="messagge" name="messagge" className="input-textarea" placeholder="" required=""
+                            <p className={errors.message}>Message</p>
+                            <textarea id="message" name="message" className={errors.message.concat(" input-textarea")} placeholder="" required=""
                                 onChange={ e=> {
                                     setMessage(e.target.value);
                                 }}
@@ -92,7 +116,7 @@ function Contact(props) {
                                 />
                                 <label for="check">You accept the terms of service and the privacy policy</label>
                             </div>
-                            <button className="btn btn-xs" onClick={e => send(e)}>Send messagge</button>
+                            <button className="btn btn-xs" onClick={e => send(e)}>Send message</button>
                             {success &&
                             <div className="success-box">
                                 <div className="alert alert-success">
@@ -100,7 +124,7 @@ function Contact(props) {
                                 </div>
                             </div>
                             }
-                            {error &&
+                            {sendError &&
                             <div className="error-box">
                                 <div className="alert alert-warning">
                                     Error, please retry. Your message has not been sent.
@@ -195,7 +219,7 @@ function Contact(props) {
                                 </div>
                             </div>
                             }
-                            {error &&
+                            {sendError &&
                             <div className="error-box">
                                 <div className="alert alert-warning">
                                     Error, please retry. Your message has not been sent.
