@@ -17,7 +17,7 @@ import {
   NavbarText
 } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
 
 import logo from './img/logo.png';
 
@@ -50,16 +50,19 @@ function Header() {
         <div className="row">
           <div className="col-sm-12 main-menu">            
             <Navbar light expand="md">
-              <NavbarBrand href="/">HOME</NavbarBrand>
+              <NavbarBrand href="/">
+                <FontAwesomeIcon icon={faHome} />
+              </NavbarBrand>
               <NavbarToggler onClick={toggle} />
               <Collapse isOpen={isOpen} navbar>
                 <Nav className="mr-auto" navbar>
                   <NavItem>
-                    <NavLink href="/components/">Components</NavLink>
+                    <NavLink href="/contact/">Contact</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                    <NavLink href="/service/">Service</NavLink>
                   </NavItem>
+                  {/*
                   <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>
                       Options
@@ -77,10 +80,11 @@ function Header() {
                       </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>
+                  */}
                 </Nav>
                 <NavbarText>
                   <span>CALL ME:</span>
-                  <span className="phone">0176 xxx xxx xxx</span>
+                  <span className="phone">+49 176 23122674</span>
                 </NavbarText>
               </Collapse>
             </Navbar>

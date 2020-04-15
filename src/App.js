@@ -1,5 +1,6 @@
 import React from 'react';
 import Home from './pages/home/Home';
+import Contact from './pages/contact/Contact';
 import {
   BrowserRouter as Router,
   Switch,
@@ -18,11 +19,11 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/about">
-          about
+        <Route path="/service">
+          Service
         </Route>
-        <Route path="/topics">
-          topics
+        <Route path="/contact">
+          <Contact />
         </Route>
         <Route path="/">
           <Home />
