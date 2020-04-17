@@ -1,6 +1,9 @@
 .contact {
     padding-top: 50px;
     padding-bottom: 50px;
+    hr {
+        border: none;
+    }
     .fade-bottom {
         animation: fadebottom .5s;
     }    
@@ -147,7 +150,7 @@
                 hr {
                     width: 100%;
                     margin-top: 16px;
-                    border-top: 1px dotted;
+                    //border-top: 1px dotted;
                     background: none;
                     opacity: 0.8;
                     margin-top: 19px;

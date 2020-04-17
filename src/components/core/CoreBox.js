@@ -21,7 +21,7 @@ function CoreBox() {
                     <div class="col-lg-6">
                         <div class="title">
                             <h2>Core Technology services</h2>
-                            <p>Our services</p>
+                            <p>My services</p>
                         </div>
                     </div>
                     <div class="col-lg-6 align-right align-left-md">
@@ -38,13 +38,47 @@ function CoreBox() {
                     <div class="grid-box">
                         <div class="grid-item">
                             <div class="cnt-box cnt-box-info boxed" data-href="#">
-                                <a href="#" class="img-box"><img src={logo1} alt="" /></a>
+                                <a href="#" class="img-box"><img src={logo4} alt="" /></a>
                                 <div class="caption">
-                                    <h2>Security audit</h2>
+                                    <h2>Web development</h2>
                                     <div class="cnt-info">
-                                        <div><span>Price</span><span>$50</span></div>
+                                        <div><span>Price</span><span>$30</span></div>
+                                        <div><span>Type</span><span>Saas</span></div>
+                                        <div><span>Client</span><span>Business</span></div>
+                                    </div>
+                                    <p>
+                                        Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-info boxed" data-href="#">
+                                <div class="extra-field">30% discount today</div>
+                                <a href="#" class="img-box"><img src={logo5} alt="" /></a>
+                                <div class="caption">
+                                    <h2>Prototyping</h2>
+                                    <div class="cnt-info">
+                                        <div><span>Price</span><span>$100</span></div>
                                         <div><span>Type</span><span>Software</span></div>
-                                        <div><span>Client</span><span>Private</span></div>
+                                        <div><span>Client</span><span>Business</span></div>
+                                    </div>
+                                    <p>
+                                        Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-info boxed" data-href="#">
+                                <div class="extra-field">30% discount today</div>
+                                <a href="#" class="img-box"><img src={logo6} alt="" /></a>
+                                <div class="caption">
+                                    <h2>API development</h2>
+                                    <div class="cnt-info">
+                                        <div><span>Price</span><span>$100</span></div>
+                                        <div><span>Type</span><span>Consulting</span></div>
+                                        <div><span>Client</span><span>Business</span></div>
                                     </div>
                                     <p>
                                         Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
@@ -86,47 +120,13 @@ function CoreBox() {
                         </div>
                         <div class="grid-item">
                             <div class="cnt-box cnt-box-info boxed" data-href="#">
-                                <a href="#" class="img-box"><img src={logo4} alt="" /></a>
+                                <a href="#" class="img-box"><img src={logo1} alt="" /></a>
                                 <div class="caption">
-                                    <h2>Web development</h2>
+                                    <h2>Security audit</h2>
                                     <div class="cnt-info">
-                                        <div><span>Price</span><span>$30</span></div>
-                                        <div><span>Type</span><span>Saas</span></div>
-                                        <div><span>Client</span><span>Business</span></div>
-                                    </div>
-                                    <p>
-                                        Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="cnt-box cnt-box-info boxed" data-href="#">
-                                <div class="extra-field">30% discount today</div>
-                                <a href="#" class="img-box"><img src={logo5} alt="" /></a>
-                                <div class="caption">
-                                    <h2>Legal contracts</h2>
-                                    <div class="cnt-info">
-                                        <div><span>Price</span><span>$100</span></div>
+                                        <div><span>Price</span><span>$50</span></div>
                                         <div><span>Type</span><span>Software</span></div>
-                                        <div><span>Client</span><span>Business</span></div>
-                                    </div>
-                                    <p>
-                                        Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="cnt-box cnt-box-info boxed" data-href="#">
-                                <div class="extra-field">30% discount today</div>
-                                <a href="#" class="img-box"><img src={logo6} alt="" /></a>
-                                <div class="caption">
-                                    <h2>Strategic planning</h2>
-                                    <div class="cnt-info">
-                                        <div><span>Price</span><span>$100</span></div>
-                                        <div><span>Type</span><span>Consulting</span></div>
-                                        <div><span>Client</span><span>Business</span></div>
+                                        <div><span>Client</span><span>Private</span></div>
                                     </div>
                                     <p>
                                         Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.

@@ -78,8 +78,8 @@ function Contact(props) {
                 <div className="row">
                     <div className="col-lg-8">
                         <div className="title">
-                            <h2>Write us</h2>
-                            <p>Contact us from here</p>
+                            <h2>Write me</h2>
+                            <p>Contact me from here</p>
                         </div>
                         <form className="form-box form-ajax">
                             <div className="row">
@@ -140,15 +140,15 @@ function Contact(props) {
                             <p>Information</p>
                         </div>
                         <p>
-                            Lorem ipsum dolor sit ametete consecte turerno adipiscing elitsed do eiusmod tempo incididunt utlabore et dolore aliqua.
+                            Request a consultation for your responsive web api project, website project, marketing and more...
                         </p>
                         <ul className="text-list text-list-line">
-                            <li><b>Address</b><hr /><p>139 Baker St, E1 7PT, London</p></li>
-                            <li><b>Web</b><hr /><p>domain.com</p></li>
+                            <li><b>Address</b><hr /><p>Goethepark 14, Berlin</p></li>
+                            <li><b>Web</b><hr /><p>black-development.de</p></li>
 
-                            <li><b>Email</b><hr /><p>info@domain.com</p></li>
-                            <li><b>Phone</b><hr /><p>(02) 123 456 789999</p></li>
-                            <li><b>Skype</b><hr /><p>example.name</p></li>
+                            <li><b>Email</b><hr /><p>GrinderFX@gmx.de</p></li>
+                            <li><b>Phone</b><hr /><p>+49 176 231 22 674</p></li>
+                            <li><b>Skype</b><hr /><p>GrinderFX</p></li>
                         </ul>
                         <hr className="space-sm" />
                         <div className="icon-links icon-social icon-links-button social-colors">
@@ -169,13 +169,12 @@ function Contact(props) {
                 <div className="row fade-bottom" data-anima="" data-time="1000">
                     <div className="col-lg-6">
                         <div className="title">
-                            <h2>Request a free<br />consultation with us</h2>
-                            <p>Contact us now</p>
+                            <h2>Request a free<br />consultation with me</h2>
+                            <p>Contact me now</p>
                         </div>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore aliqua.
+                            Request a consultation for your responsive web api project, website project, marketing and more...
                         </p>
-                        <a href="#" className="btn-text active">You accept our policy</a>
                     </div>
                     <div className="col-lg-6">
                         <form className="form-box">

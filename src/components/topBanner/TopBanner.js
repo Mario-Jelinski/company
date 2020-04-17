@@ -19,20 +19,20 @@ function TopBanner() {
                         <h3 className="text-color-2">
                             ACCELERATE THE USER EXPERIENCE
                         </h3>
-                        <Carousel controls={false} number={3000}>
+                        <Carousel controls={false} indicators={false} number={3000}>
                             <Carousel.Item>                                
                                 <Carousel.Caption>
-                                    <h1>First slide label</h1>                                
+                                    <h1>Technology to power your business</h1>                                
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
                                 <Carousel.Caption>
-                                    <h1>Second slide label</h1>                                
+                                    <h1>Software to power your business</h1>                                
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
                                 <Carousel.Caption>
-                                    <h1>Third slide label</h1>                                
+                                    <h1>Hardware to power your business</h1>                                
                                 </Carousel.Caption>
                             </Carousel.Item>
                         </Carousel>
@@ -43,8 +43,8 @@ function TopBanner() {
                             in voluptate velit esse cillum dolore eu fugiat nulla pariature irure dolore.
                         </p>
                         <hr className="space-sm" />
-                        <a href="#" className="btn btn-sm width-190 full-width-sm">Request a quote</a>
-                        <a href="#" className="btn btn-border btn-sm width-190 active full-width-sm">Free trial</a>
+                        <a href="/contact/" className="btn btn-sm width-190 full-width-sm">Request a quote</a>
+                        <a href="/service/" className="btn btn-border btn-sm width-190 active full-width-sm">Service</a>
                         <hr className="space-md" />
                     </div>  
                     <div className="col-lg-5 me hidden-md">
