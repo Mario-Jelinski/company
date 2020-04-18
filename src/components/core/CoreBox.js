@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './coreBox.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import logo1 from './img/logo1.jpg';
+import logo1 from './img/3d.jpg';
 import logo2 from './img/logo2.jpg';
 import logo3 from './img/logo3.jpg';
 import logo4 from './img/logo4.jpg';
@@ -42,62 +42,62 @@ function CoreBox() {
                                 <div class="caption">
                                     <h2>Web development</h2>
                                     <div class="cnt-info">
-                                        <div><span>Price</span><span>$30</span></div>
+                                        <div><span>Price</span><span>650€</span></div>
                                         <div><span>Type</span><span>Saas</span></div>
                                         <div><span>Client</span><span>Business</span></div>
                                     </div>
                                     <p>
-                                        Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
+                                        Get support for your web project in React, Javascript, NodeJS, PHP or even C++.  
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="grid-item">
                             <div class="cnt-box cnt-box-info boxed" data-href="#">
-                                <div class="extra-field">30% discount today</div>
+                                <div class="extra-field">20% discount today</div>
                                 <a href="#" class="img-box"><img src={logo5} alt="" /></a>
                                 <div class="caption">
                                     <h2>Prototyping</h2>
                                     <div class="cnt-info">
-                                        <div><span>Price</span><span>$100</span></div>
+                                        <div><span>Price</span><span>520€</span></div>
                                         <div><span>Type</span><span>Software</span></div>
                                         <div><span>Client</span><span>Business</span></div>
                                     </div>
                                     <p>
-                                        Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
+                                        Get an early sample, model, or release of a product built to test a concept or process.
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="grid-item">
-                            <div class="cnt-box cnt-box-info boxed" data-href="#">
-                                <div class="extra-field">30% discount today</div>
+                            <div class="cnt-box cnt-box-info boxed" data-href="#">                                
                                 <a href="#" class="img-box"><img src={logo6} alt="" /></a>
                                 <div class="caption">
                                     <h2>API development</h2>
                                     <div class="cnt-info">
-                                        <div><span>Price</span><span>$100</span></div>
+                                        <div><span>Price</span><span>650€</span></div>
                                         <div><span>Type</span><span>Consulting</span></div>
                                         <div><span>Client</span><span>Business</span></div>
                                     </div>
                                     <p>
-                                        Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
+                                        Secure and fast API with logging system, error handling and token authentication.
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="grid-item">
                             <div class="cnt-box cnt-box-info boxed" data-href="#">
+                                <div class="extra-field">20% discount today</div>
                                 <a href="#" class="img-box"><img src={logo2} alt="" /></a>
                                 <div class="caption">
                                     <h2>Performance checks</h2>
                                     <div class="cnt-info">
-                                        <div><span>Price</span><span>$80</span></div>
+                                        <div><span>Price</span><span>520€</span></div>
                                         <div><span>Type</span><span>App</span></div>
                                         <div><span>Client</span><span>Private</span></div>
                                     </div>
                                     <p>
-                                        Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
+                                        Do you want to test your app and improve it's performance? I can help you to find slow implementations.
                                     </p>
                                 </div>
                             </div>
@@ -106,14 +106,14 @@ function CoreBox() {
                             <div class="cnt-box cnt-box-info boxed" data-href="#">
                                 <a href="#" class="img-box"><img src={logo3} alt="" /></a>
                                 <div class="caption">
-                                    <h2>Vulnerability report</h2>
+                                    <h2>Test development</h2>
                                     <div class="cnt-info">
-                                        <div><span>Price</span><span>$50</span></div>
+                                        <div><span>Price</span><span>650€</span></div>
                                         <div><span>Type</span><span>App</span></div>
                                         <div><span>Client</span><span>Business</span></div>
                                     </div>
                                     <p>
-                                        Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
+                                        You are missing integration and performance test or you want to implement selenium tests ?
                                     </p>
                                 </div>
                             </div>
@@ -122,14 +122,14 @@ function CoreBox() {
                             <div class="cnt-box cnt-box-info boxed" data-href="#">
                                 <a href="#" class="img-box"><img src={logo1} alt="" /></a>
                                 <div class="caption">
-                                    <h2>Security audit</h2>
+                                    <h2>WebGL 3D</h2>
                                     <div class="cnt-info">
-                                        <div><span>Price</span><span>$50</span></div>
+                                        <div><span>Price</span><span>700€</span></div>
                                         <div><span>Type</span><span>Software</span></div>
                                         <div><span>Client</span><span>Private</span></div>
                                     </div>
                                     <p>
-                                        Excepteur sint occaecat cupidatat non proidento in culpa qui officia deserunt mollit anim id est laborum.
+                                        Rendering interactive 2D and 3D graphics without the use of plug-ins with babylonJS or ThreeJS
                                     </p>
                                 </div>
                             </div>

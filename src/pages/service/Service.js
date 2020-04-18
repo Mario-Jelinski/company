@@ -6,18 +6,21 @@ import About from '../../components/about/About';
 import CoreBox from '../../components/core/CoreBox';
 import ContactForm from '../../components/contact/Contact';
 import Footer from '../../components/footer/Footer';
-//import './App.css';
+import './App.scss';
 
-function Service() {
+function Contact() {
   //const bab = new Babylon();
   return (
     <div className="container-fluid">
-        <Header />
-        <ContactForm detailed={true} showMap={true} />
-
+        <Header />        
+        <div className="construction">
+            <div className="container">
+                <div className="center">Under Construction</div> 
+            </div>
+        </div>
         <Footer />
     </div>
   );
 }
 
-export default Service;
+export default Contact;

@@ -51,10 +51,10 @@ function Contact(props) {
         setsendError(false); 
         const requestOptions = {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: { 'Access-Control-Allow-Origin': '*', "Access-Control-Allow-Headers": "*", 'Content-Type': 'application/json' },
             body: JSON.stringify({ name: name, email: email, message: message })
         };        
-        fetch('/api/v1/message/', requestOptions)
+        fetch('http://h2572027.stratoserver.net:3001/api/v1/contact/', requestOptions)
             .then(async response => {
                 const data = await response.json();    
                 if (!response.ok) {                    

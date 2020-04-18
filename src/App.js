@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from './pages/home/Home';
 import Contact from './pages/contact/Contact';
+import Service from './pages/service/Service';
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,7 +21,7 @@ function App() {
     <Router>
       <Switch>
         <Route path="/service">
-          Service
+          <Service />
         </Route>
         <Route path="/contact">
           <Contact />

@@ -42,12 +42,12 @@ function Benefit() {
                 <div class="row align-items-center fade-bottom" data-anima="" data-time="1000">
                     <div class="col-lg-6">
                         <div class="title">
-                            <h2>You should choose us</h2>
+                            <h2>You should choose me</h2>
                             <p>Exclusive benefits</p>
                         </div>
                         <p>
-                            Lorem ipsum dolor sit amet consecteture Duis aute irure dolor innocente reprehenderit
-                            in voluptate velit esse cillum dolore eu fugiat nulla.
+                            Each organization has its own business model and in-house processes.
+                            There're many benefits of designing and developing software exactly as per your requirements.
                         </p>
                         <hr class="space-sm" />
                         <div className="menu-entry">
@@ -60,9 +60,9 @@ function Benefit() {
                                     }                                
                                 }} 
                             >
-                                    <FontAwesomeIcon icon={faAngleRight} />The membership cards</Button>
+                            <FontAwesomeIcon icon={faAngleRight} />Customized software</Button>
                             <Collapse isOpen={isOpen1}>
-                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <p>Business operations can be complex and every organization has different needs and issues. The numerous advantages of custom software development include integration, personalization, and cost effectiveness. It's better to create tailor-made products than to go off-the-shelf.</p>
                             </Collapse>                        
                         </div>
                         <div className="menu-entry">
@@ -75,10 +75,10 @@ function Benefit() {
                                     }                                
                                 }}  
                             >
-                                <FontAwesomeIcon icon={faAngleRight} />
-                                Financials helps and money back</Button>
+                            <FontAwesomeIcon icon={faAngleRight} />
+                                Long time experience</Button>
                             <Collapse isOpen={isOpen2}>
-                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <p>I worked a long time for the biggest company from europe, USA and South America</p>
                             </Collapse>
                         </div>   
                         <div className="menu-entry">                     
@@ -93,7 +93,7 @@ function Benefit() {
                             >
                                 <FontAwesomeIcon icon={faAngleRight} />Team creation and support</Button>
                             <Collapse isOpen={isOpen3}>
-                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Utenim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <p>I worked in many teams and learned a lot about team characters, personality and leader in groups.</p>
                             </Collapse>
                         </div>   
                     </div>
