@@ -39,8 +39,7 @@ function TopBanner() {
 
 
                         <p>
-                            Try now our free trial membership.  Duis aute irure dolor in reprehenderit
-                            in voluptate velit esse cillum dolore eu fugiat nulla pariature irure dolore.
+                            This first communication becomes an important step in building relationship with your future software development partner
                         </p>
                         <hr className="space-sm" />
                         <a href="/contact/" className="btn btn-sm width-190 full-width-sm">Request a quote</a>

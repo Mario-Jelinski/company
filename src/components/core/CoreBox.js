@@ -16,32 +16,32 @@ function CoreBox() {
 
     return (
         <section className="core-box">
-            <div class="container">
-                <div class="row fade-bottom" data-anima="" data-time="1000">
-                    <div class="col-lg-6">
-                        <div class="title">
+            <div className="container">
+                <div className="row fade-bottom" data-anima="" data-time="1000">
+                    <div className="col-lg-6">
+                        <div className="title">
                             <h2>Core Technology services</h2>
                             <p>My services</p>
                         </div>
                     </div>
-                    <div class="col-lg-6 align-right align-left-md">
-                        <hr class="space-sm hidden-md" />
-                        <a href="#" class="btn-text active">
+                    <div className="col-lg-6 align-right align-left-md">
+                        <hr className="space-sm hidden-md" />
+                        <a href="#" className="btn-text active">
                             All services 
                             <FontAwesomeIcon icon={faAngleRight} />
                         </a>
                     </div>
                 </div>
-                <hr class="space" />
+                <hr className="space" />
 
-                <div class="grid-list fade-bottom" data-columns="3" data-columns-md="2" data-columns-sm="1" data-anima="" data-time="1000">
-                    <div class="grid-box">
-                        <div class="grid-item">
-                            <div class="cnt-box cnt-box-info boxed" data-href="#">
-                                <a href="#" class="img-box"><img src={logo4} alt="" /></a>
-                                <div class="caption">
+                <div className="grid-list fade-bottom" data-columns="3" data-columns-md="2" data-columns-sm="1" data-anima="" data-time="1000">
+                    <div className="grid-box">
+                        <div className="grid-item">
+                            <div className="cnt-box cnt-box-info boxed" data-href="#">
+                                <a href="#" className="img-box"><img src={logo4} alt="" /></a>
+                                <div className="caption">
                                     <h2>Web development</h2>
-                                    <div class="cnt-info">
+                                    <div className="cnt-info">
                                         <div><span>Price</span><span>650€</span></div>
                                         <div><span>Type</span><span>Saas</span></div>
                                         <div><span>Client</span><span>Business</span></div>
@@ -52,13 +52,13 @@ function CoreBox() {
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item">
-                            <div class="cnt-box cnt-box-info boxed" data-href="#">
-                                <div class="extra-field">20% discount today</div>
-                                <a href="#" class="img-box"><img src={logo5} alt="" /></a>
-                                <div class="caption">
+                        <div className="grid-item">
+                            <div className="cnt-box cnt-box-info boxed" data-href="#">
+                                <div className="extra-field">20% discount today</div>
+                                <a href="#" className="img-box"><img src={logo5} alt="" /></a>
+                                <div className="caption">
                                     <h2>Prototyping</h2>
-                                    <div class="cnt-info">
+                                    <div className="cnt-info">
                                         <div><span>Price</span><span>520€</span></div>
                                         <div><span>Type</span><span>Software</span></div>
                                         <div><span>Client</span><span>Business</span></div>
@@ -69,12 +69,12 @@ function CoreBox() {
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item">
-                            <div class="cnt-box cnt-box-info boxed" data-href="#">                                
-                                <a href="#" class="img-box"><img src={logo6} alt="" /></a>
-                                <div class="caption">
+                        <div className="grid-item">
+                            <div className="cnt-box cnt-box-info boxed" data-href="#">                                
+                                <a href="#" className="img-box"><img src={logo6} alt="" /></a>
+                                <div className="caption">
                                     <h2>API development</h2>
-                                    <div class="cnt-info">
+                                    <div className="cnt-info">
                                         <div><span>Price</span><span>650€</span></div>
                                         <div><span>Type</span><span>Consulting</span></div>
                                         <div><span>Client</span><span>Business</span></div>
@@ -85,13 +85,13 @@ function CoreBox() {
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item">
-                            <div class="cnt-box cnt-box-info boxed" data-href="#">
-                                <div class="extra-field">20% discount today</div>
-                                <a href="#" class="img-box"><img src={logo2} alt="" /></a>
-                                <div class="caption">
+                        <div className="grid-item">
+                            <div className="cnt-box cnt-box-info boxed" data-href="#">
+                                <div className="extra-field">20% discount today</div>
+                                <a href="#" className="img-box"><img src={logo2} alt="" /></a>
+                                <div className="caption">
                                     <h2>Performance checks</h2>
-                                    <div class="cnt-info">
+                                    <div className="cnt-info">
                                         <div><span>Price</span><span>520€</span></div>
                                         <div><span>Type</span><span>App</span></div>
                                         <div><span>Client</span><span>Private</span></div>
@@ -102,12 +102,12 @@ function CoreBox() {
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item">
-                            <div class="cnt-box cnt-box-info boxed" data-href="#">
-                                <a href="#" class="img-box"><img src={logo3} alt="" /></a>
-                                <div class="caption">
+                        <div className="grid-item">
+                            <div className="cnt-box cnt-box-info boxed" data-href="#">
+                                <a href="#" className="img-box"><img src={logo3} alt="" /></a>
+                                <div className="caption">
                                     <h2>Test development</h2>
-                                    <div class="cnt-info">
+                                    <div className="cnt-info">
                                         <div><span>Price</span><span>650€</span></div>
                                         <div><span>Type</span><span>App</span></div>
                                         <div><span>Client</span><span>Business</span></div>
@@ -118,12 +118,12 @@ function CoreBox() {
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item">
-                            <div class="cnt-box cnt-box-info boxed" data-href="#">
-                                <a href="#" class="img-box"><img src={logo1} alt="" /></a>
-                                <div class="caption">
+                        <div className="grid-item">
+                            <div className="cnt-box cnt-box-info boxed" data-href="#">
+                                <a href="#" className="img-box"><img src={logo1} alt="" /></a>
+                                <div className="caption">
                                     <h2>WebGL 3D</h2>
-                                    <div class="cnt-info">
+                                    <div className="cnt-info">
                                         <div><span>Price</span><span>700€</span></div>
                                         <div><span>Type</span><span>Software</span></div>
                                         <div><span>Client</span><span>Private</span></div>

@@ -2,31 +2,31 @@ import React, { useEffect, useState } from 'react';
 import './about.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import sign from './img/sign.png';
+import sign from './img/signing.png';
 import logo from './img/img1.jpg';
 
 function About() {  
 
     return (
         <section className="about">
-            <div class="container">
-                <div class="row row-fit-lg fade-bottom" data-anima="" data-time="1000">
-                    <div class="col-lg-6 overflow">                        
-                        <a class="img-box img-box-caption btn-video lightbox" href="#" data-lightbox-anima="fade-top">
+            <div className="container">
+                <div className="row row-fit-lg fade-bottom" data-anima="" data-time="1000">
+                    <div className="col-lg-6 overflow">                        
+                        <a className="img-box img-box-caption btn-video lightbox" href="#" data-lightbox-anima="fade-top">
                             <img src={logo} alt="" />
                             <span>Mario Schwarz</span>
                         </a>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="title">
+                    <div className="col-lg-6">
+                        <div className="title">
                             <h2>My values and goals</h2>
                             <p>About me</p>
                         </div>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua.
-                            Utenim ad minim veniam quis nostrud exercitation ullamco laboris.
+                            Clean code and Simplicity. software that’s easy to understand and maintain that allows us to continue making changes.
+                            Software that contains no more complexity than it needs to do a good job which keeps the cost low.
                         </p>
-                        <div class="box-sign">
+                        <div className="box-sign">
                             <img alt="sign" src={sign} />
                             <b>Mario Schwarz</b>
                             <span>Sofware Engineer</span>

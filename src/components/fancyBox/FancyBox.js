@@ -9,12 +9,12 @@ function FancyBox() {
 
     return (
         <section className="section-base section-overflow-top fancy-box">
-            <div class="container">
-                <div class="grid-list" data-columns="4" data-columns-md="2" data-columns-sm="1">
-                    <div class="grid-box">
-                        <div class="grid-item">
-                            <div class="cnt-box cnt-box-top-icon boxed">                                
-                                <div class="caption">
+            <div className="container">
+                <div className="grid-list" data-columns="4" data-columns-md="2" data-columns-sm="1">
+                    <div className="grid-box">
+                        <div className="grid-item">
+                            <div className="cnt-box cnt-box-top-icon boxed">                                
+                                <div className="caption">
                                     <FontAwesomeIcon icon={faDesktop} />
                                     <h2>Smart softwares</h2>
                                     <p>
@@ -23,9 +23,9 @@ function FancyBox() {
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item">
-                            <div class="cnt-box cnt-box-top-icon boxed">
-                                <div class="caption">
+                        <div className="grid-item">
+                            <div className="cnt-box cnt-box-top-icon boxed">
+                                <div className="caption">
                                     <FontAwesomeIcon icon={faLock} />
                                     <h2>Trusted security</h2>
                                     <p>
@@ -34,9 +34,9 @@ function FancyBox() {
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item">
-                            <div class="cnt-box cnt-box-top-icon boxed">
-                                <div class="caption">
+                        <div className="grid-item">
+                            <div className="cnt-box cnt-box-top-icon boxed">
+                                <div className="caption">
                                     <FontAwesomeIcon icon={faSitemap} />
                                     <h2>Api development</h2>
                                     <p>
@@ -45,9 +45,9 @@ function FancyBox() {
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item">
-                            <div class="cnt-box cnt-box-top-icon boxed">
-                                <div class="caption">
+                        <div className="grid-item">
+                            <div className="cnt-box cnt-box-top-icon boxed">
+                                <div className="caption">
                                     <FontAwesomeIcon icon={faUsers} />
                                     <h2>User experience</h2>
                                     <p>

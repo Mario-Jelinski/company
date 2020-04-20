@@ -51,10 +51,10 @@ function Contact(props) {
         setsendError(false); 
         const requestOptions = {
             method: 'POST',
-            headers: { 'Access-Control-Allow-Origin': '*', "Access-Control-Allow-Headers": "*", 'Content-Type': 'application/json' },
+            headers: { 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json' },
             body: JSON.stringify({ name: name, email: email, message: message })
         };        
-        fetch('http://h2572027.stratoserver.net:3001/api/v1/contact/', requestOptions)
+        fetch('http://black-development.de:3001/api/v1/contact/', requestOptions)
             .then(async response => {
                 const data = await response.json();    
                 if (!response.ok) {                    
@@ -105,8 +105,8 @@ function Contact(props) {
                                 onChange={ e=> {
                                     setMessage(e.target.value);
                                 }}
+                                defaultValue={message}
                             >
-                                {message}
                             </textarea>
                             <div className={policyErrorClass.concat(" form-checkbox")} >
                                 <input type="checkbox" id="check" name="check" value="check" required="" value={policy}
@@ -199,8 +199,8 @@ function Contact(props) {
                                 onChange={ e=> {
                                     setMessage(e.target.value);
                                 }}
+                                defaultValue={message}
                             >
-                                {message}
                             </textarea>
                             <div className={policyErrorClass.concat(" form-checkbox")} >
                                 <input type="checkbox" id="check" name="check" value="check" required="" value={policy}
@@ -208,7 +208,7 @@ function Contact(props) {
                                         setPolicy(e.target.value);
                                     }}
                                 />
-                                <label for="check">You accept the terms of service and the privacy policy</label>
+                                <label htmlFor="check">You accept the terms of service and the privacy policy</label>
                             </div>
                             <button className="btn btn-xs" onClick={e => send(e)}>Send message</button>
                             {success &&

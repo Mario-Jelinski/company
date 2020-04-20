@@ -38,10 +38,10 @@ function Benefit() {
 
     return (
         <section className="benefit">
-            <div class="container">
-                <div class="row align-items-center fade-bottom" data-anima="" data-time="1000">
-                    <div class="col-lg-6">
-                        <div class="title">
+            <div className="container">
+                <div className="row align-items-center fade-bottom" data-anima="" data-time="1000">
+                    <div className="col-lg-6">
+                        <div className="title">
                             <h2>You should choose me</h2>
                             <p>Exclusive benefits</p>
                         </div>
@@ -49,7 +49,7 @@ function Benefit() {
                             Each organization has its own business model and in-house processes.
                             There're many benefits of designing and developing software exactly as per your requirements.
                         </p>
-                        <hr class="space-sm" />
+                        <hr className="space-sm" />
                         <div className="menu-entry">
                             <Button color="primary" className={class1} 
                                 onClick={() => {                                
@@ -97,7 +97,7 @@ function Benefit() {
                             </Collapse>
                         </div>   
                     </div>
-                    <div class="col-lg-6">
+                    <div className="col-lg-6">
                         <img src={logo} alt="" />
                     </div>
                 </div>

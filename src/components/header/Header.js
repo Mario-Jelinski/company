@@ -16,6 +16,7 @@ import {
   DropdownItem,
   NavbarText
 } from 'reactstrap';
+import CookieBanner from 'react-cookie-banner';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 
@@ -31,6 +32,10 @@ function Header() {
 
   return (
     <header>
+      <CookieBanner
+        message="Yes, we use cookies. If you don't like it change website, we won't miss you!"
+        onAccept={() => {}}
+        cookie="user-has-accepted-cookies" />
       <div className="container">
         <div className="row">
           <div className="col-sm-12 header-top">
